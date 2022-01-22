@@ -11,6 +11,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index1.css" rel="stylesheet" />
+    <style>
+        ul li:nth-child(3) a {cursor: pointer;}
+    </style>
 </head>
 <body>
     <!-- Responsive navbar-->
@@ -21,8 +24,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="About">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" name="Tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mobile: 010-4190-3841">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
                 </ul>
             </div>
@@ -51,69 +54,86 @@
                 <p class="text-white m-0">보유기술: HTML, CSS, JavaScript, JQuery, Java, Oracle, Bootstrap, STS, R, Python</p>
             </div>
         </div>
-        <!-- Content Row 1 -->
-        <div class="container mt-3 row gx-4 gx-lg-5" style="margin:0 auto;">
-            <!-- #1 -->
-            <div class="card" style="width:370px">
-                <img class="card-img-top" src="assets/images/portfolio-etit_01.png" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title">넷플릭스 데모</h4>
-                    <p class="card-text">HTML5, CSS3, JavaScript, 반응형웹 사용</p>
-                    <a href="https://taegikoo.github.io/edit01/" target="_blank" class="btn btn-primary">페이지로 이동</a>
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets/images/portfolio-etit_01.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">넷플릭스_데모</h2>
+                        <p class="card-text">HTML5, CSS3, JavaScript, 반응형 웹 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="https://taegikoo.github.io/edit01/" target="_blank">Jump to Page</a>
+                    </div>
                 </div>
             </div>
-            <!-- #2 -->
-            <div class="card" style="width:370px;margin:0 9px;">
-                <img class="card-img-top" src="assets/images/portfolio-etit_02.png" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title">알라딘_데모</h4>
-                    <p class="card-text">HTML5, CSS3, JavaScript, Bootstrap, 반응형웹 사용</p>
-                    <a href="https://taegikoo.github.io/edit02/" target="_blank" class="btn btn-primary">페이지로 이동</a>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets/images/portfolio-etit_02.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">알라딘_데모</h2>
+                        <p class="card-text">HTML5, CSS3, JavaScript, Bootstrap, 반응형웹 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="https://taegikoo.github.io/edit02/" target="_blank">Jump to Page</a>
+                    </div>
                 </div>
             </div>
-            <!-- #3 -->
-            <div class="card" style="width:370px">
-                <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title">학사관리</h4>
-                    <p class="card-text">Java, Swing, JDBC, Oracle 사용</p>
-                    <a href="#다음에 업로드 예정" target="_self" class="btn btn-primary">업로드 예정</a>   <!--유튜브 자신의 학사관리 영상 업로드 페이지로 이동-->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">학사관리</h2>
+                        <p class="card-text">Java, Swing, JDBC, Oracle 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="#다음에 업로드 예정">업로드 예정</a>   <!--유튜브 자신의 학사관리 영상 업로드 페이지로 이동-->
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Content Row 2 -->
-        <div class="container mt-3 row gx-4 gx-lg-5" style="margin:0 auto;">
-            <!-- #4 -->
-            <div class="card" style="width:370px">
-                <img class="card-img-top" src="assets/images/portfolio-etit_03.png" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title">애플_데모</h4>
-                    <p class="card-text">HTML5, CSS3, JavaScript, JQuery, Bootstrap, 반응형웹 사용</p>
-                    <a href="https://taegikoo.github.io/edit03/" target="_blank" class="btn btn-primary">페이지로 이동</a>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets/images/portfolio-etit_03.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">애플_데모</h2>
+                        <p class="card-text">HTML5, CSS3, JavaScript, JQuery, Bootstrap, 반응형웹 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="https://taegikoo.github.io/edit03/" target="_blank">Jump to Page</a>
+                    </div>
                 </div>
             </div>
-            <!-- #5 -->
-            <div class="card" style="width:370px;margin:0 9px;">
-                <img class="card-img-top" src="assets/images/portfolio-seek.png" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title">Seek.Partner</h4>
-                    <p class="card-text">HTML, CSS, JavaScript, JQuery, Bootstrap, Eclipse(STS), Oracle, 반응형, Bootstrap 사용</p>
-                    <a href="https://youtu.be/JVXPCR7cnyw" target="_blank" class="btn btn-primary">페이지로 이동</a>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets/images/portfolio-seek.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">Seek.Partner</h2>
+                        <p class="card-text">HTML, CSS, JavaScript, JQuery, Bootstrap, Eclipse(STS), Oracle, 반응형, Bootstrap 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="https://youtu.be/JVXPCR7cnyw" target="_blank">Jump to Page</a>
+                    </div>
                 </div>
             </div>
-            <!-- #6 -->
-            <div class="card" style="width:370px">
-                <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
-                <hr />
-                <div class="card-body">
-                    <h4 class="card-title"><!-- 업로드 예정 --></h4>
-                    <p class="card-text"><!-- 업로드 예정 --></p>
-                    <a href="#업로드예정" target="_self" class="btn btn-primary">업로드 예정</a>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">업로드 예정</h2>
+                        <p class="card-text">업로드 예정입니다</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="" target="_blank">업로드 예정</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,5 +147,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
 </body>
 </html>

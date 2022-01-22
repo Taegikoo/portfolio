@@ -1,0 +1,12 @@
+/* .container > div > div > ul > li:first-child {text-indent: -9999px; width: 1300px; height: 1500px;} */
+/* .container > div > div > ul > li:first-child a {background-image: url("../images/web-skill-icon.png"); text-indent: -9999px; width: 1300px; height: 1500px;} */
+.container > div > div > ul > li:nth-child(2) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:nth-child(3) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:nth-child(4) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:nth-child(5) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:nth-child(6) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:nth-child(7) {background-image: url("../images/web-skill-icon.png");}
+.container > div > div > ul > li:last-child {background-image: url("../images/web-skill-icon.png");}
+
+.container div.col-lg-5 > h1 {padding-bottom: 3%;}
+.container div.col-lg-5 > p {padding-bottom: 1% !important;}
