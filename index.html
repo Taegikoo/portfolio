@@ -7,34 +7,41 @@
     <meta name="author" content="" />
     <title>이현구 포트폴리오</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon-hk-portfolio.ico" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-hk-portfolio.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index1.css" rel="stylesheet" />
     <style>
-        ul li:nth-child(3) a {cursor: pointer;}
+        header.navbar {position: sticky; top: 0; z-index: 999;}
+
+        /* 보유기술 */
+        ul li {display: inline-block;}
+        ul li img {width: 100px; margin: 30px;}
+        ul li.nav-item:nth-child(3) a {cursor: pointer;}
+
+        section {margin: auto 5% 3%;}
     </style>
 </head>
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Responsive navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <a class="navbar-brand" href="#!">LEE HYUNKOO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html/about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" name="Tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mobile: 010-4190-3841">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Works">Works</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Content-->
-    <div class="container px-4 px-lg-5">
-        <!-- Heading Row-->
+    <!-- Page Content -->
+    <!-- Heading Row -->
+    <section class="fitst-section">
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <div class="col-lg-7">
                 <!-- <img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /> -->
@@ -45,21 +52,42 @@
                 <p>생년월일: 1995. 1. 27</p>
                 <p>학력사항: 유한대학교 컴퓨터정보과 졸업</p>
                 <p>수료내역: TIS국비지원교육센터<br />(2021. 7. 20 ~ 2022. 1. 17)</p>
-                <a class="btn btn-primary" href="html/about.html">About me</a>
+                <a class="btn btn-primary" href="#html/about.html">About me</a>
             </div>
         </div>
-        <!-- Call to Action-->
+    </section>
+
+    <!-- Call to Action -->
+    <section class="second-section">
         <div class="card text-white bg-secondary my-5 py-4 text-center">
             <div class="card-body">
-                <p class="text-white m-0">보유기술: HTML, CSS, JavaScript, JQuery, Java, Oracle, Bootstrap, STS, R, Python</p>
+                <p class="text-white m-0">
+                    <ul>
+                        <h2>보유기술</h2>
+                        <li class="n1"><img src="images/web-skill-html.png" alt="HTML" /></li>              <!-- 1 -->
+                        <li class="n2"><img src="images/web-skill-css.png" alt="CSS" /></li>                <!-- 2 -->
+                        <li class="n3"><img src="images/web-skill-javascript.png" alt="JavaScript" /></li>  <!-- 3 -->
+                        <li class="n4"><img src="images/web-skill-jquery.png" alt="JQuery" /></li>          <!-- 4 -->
+                        <li class="n5"><img src="images/web-skill-java.png" alt="Java" /></li>              <!-- 5 -->
+                        <li class="n6"><img src="images/web-skill-oracle.png" alt="Oracle" /></li>          <!-- 6 -->
+                        <li class="n7"><img src="images/web-skill-bootstrap.png" alt="Bootstrap" /></li>    <!-- 7 -->
+                        <li class="n8"><img src="images/web-skill-spring.png" alt="STS" /></li>             <!-- 8 -->
+                        <li class="n9"><img src="images/web-skill-r.png" alt="R" /></li>                    <!-- 9 -->
+                        <li class="n0"><img src="images/web-skill-python.png" alt="Python" /></li>          <!-- 0 -->
+                    </ul>
+                    <!-- <img src="images/web-skill-icon.png" alt="기술" /> -->
+                </p>
             </div>
         </div>
-        <!-- Content Row-->
+    </section>
+    
+    <!-- Content Row -->
+    <section class="third-section" id="Works">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="card-img-top" src="assets/images/portfolio-etit_01.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <img class="card-img-top" src="images/portfolio-etit_01.png" alt="Card image" style="width:100%;padding: 1rem 0;">
                         <hr />
                         <h2 class="card-title">넷플릭스_데모</h2>
                         <p class="card-text">HTML5, CSS3, JavaScript, 반응형 웹 사용</p>
@@ -72,7 +100,7 @@
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="card-img-top" src="assets/images/portfolio-etit_02.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <img class="card-img-top" src="images/portfolio-etit_02.png" alt="Card image" style="width:100%;padding: 1rem 0;">
                         <hr />
                         <h2 class="card-title">알라딘_데모</h2>
                         <p class="card-text">HTML5, CSS3, JavaScript, Bootstrap, 반응형웹 사용</p>
@@ -85,10 +113,10 @@
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <img class="card-img-top" src="#" alt="할 일 목록 사이트" style="width:100%;padding: 1rem 0;">
                         <hr />
-                        <h2 class="card-title">학사관리</h2>
-                        <p class="card-text">Java, Swing, JDBC, Oracle 사용</p>
+                        <h2 class="card-title">To Do List</h2>
+                        <p class="card-text">HTML5, CSS3, JavaScript, Bootstrap, 반응형웹 사용</p>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary btn-sm" href="#다음에 업로드 예정">업로드 예정</a>   <!--유튜브 자신의 학사관리 영상 업로드 페이지로 이동-->
@@ -100,10 +128,23 @@
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="card-img-top" src="assets/images/portfolio-etit_03.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <img class="card-img-top" src="#" alt="학사 관리 프로그램 영상" style="width:100%;padding: 1rem 0;">
+                        <hr />
+                        <h2 class="card-title">학사관리</h2>
+                        <p class="card-text">Java, Swing, JDBC, Oracle 사용</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="#다음에 업로드 예정">업로드 예정</a>   <!--유튜브 자신의 학사관리 영상 업로드 페이지로 이동-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/portfolio-etit_03.png" alt="데모페이지" style="width:100%;padding: 1rem 0;">
                         <hr />
                         <h2 class="card-title">애플_데모</h2>
-                        <p class="card-text">HTML5, CSS3, JavaScript, JQuery, Bootstrap, 반응형웹 사용</p>
+                        <p class="card-text">HTML5, CSS3, JavaScript, API, Bootstrap, 반응형웹 사용</p>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary btn-sm" href="https://taegikoo.github.io/edit03/" target="_blank">Jump to Page</a>
@@ -113,7 +154,7 @@
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img class="card-img-top" src="assets/images/portfolio-seek.png" alt="Card image" style="width:100%;padding: 1rem 0;">
+                        <img class="card-img-top" src="images/portfolio-seek.png" alt="팀프로젝트 style="width:100%;padding: 1rem 0;">
                         <hr />
                         <h2 class="card-title">Seek.Partner</h2>
                         <p class="card-text">HTML, CSS, JavaScript, JQuery, Bootstrap, Eclipse(STS), Oracle, 반응형, Bootstrap 사용</p>
@@ -123,29 +164,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <img class="card-img-top" src="#" alt="Card image" style="width:100%;padding: 1rem 0;">
-                        <hr />
-                        <h2 class="card-title">업로드 예정</h2>
-                        <p class="card-text">업로드 예정입니다</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-primary btn-sm" href="" target="_blank">업로드 예정</a>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <!-- Footer-->
+    </section>
+    
+    <!-- Footer -->
     <footer class="py-5 bg-dark">
-        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        <div class="container px-4 px-lg-5">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021-2022</p>
+        </div>
     </footer>
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
